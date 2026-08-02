@@ -1,0 +1,29 @@
+(version 1)
+
+# Project Platypus patch_antenna_smp — Custom DRC Rules
+# Place this file alongside patch_antenna_smp.kicad_pcb
+
+# MMCX 135-3711-801 GND pads sit flush with the board edge by design.
+# The connector body spans the edge. Suppress edge clearance check.
+(rule "MMCX_JA_GND_edge_ok"
+  (constraint edge_clearance (min 0mm))
+  (condition "A.Type == 'Pad' && A.Reference == 'JA' && A.Net == 'GND'")
+)
+
+(rule "MMCX_JB_GND_edge_ok"
+  (constraint edge_clearance (min 0mm))
+  (condition "A.Type == 'Pad' && A.Reference == 'JB' && A.Net == 'GND'")
+)
+
+(rule "MMCX_JC_GND_edge_ok"
+  (constraint edge_clearance (min 0mm))
+  (condition "A.Type == 'Pad' && A.Reference == 'JC' && A.Net == 'GND'")
+)
+
+# RF_IN signal pad (pad 1) of each connector sits 3.3mm inside the
+# routed board notch. Contact is made by the spring pin, not PCB copper.
+# These unconnected warnings are intentional — add DRC exclusions in KiCad
+# by right-clicking each violation → Add DRC Exclusion.
+
+# isolated_copper on RF_IN zones is expected when Fill All Zones has not
+# been run. Always press B (Fill All Zones) before running DRC.

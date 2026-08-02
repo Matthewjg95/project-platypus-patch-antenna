@@ -1,0 +1,26 @@
+** Drc report for patch_antenna_smp.kicad_pcb **
+** Created on 2026-05-04T22:48:11 **
+** Report includes: Errors, Warnings **
+
+** Found 0 DRC violations **
+
+** Found 2 unconnected pads **
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(210.0000 mm, 116.8000 mm): Pad 1 [RF_IN] of JA on F.Cu
+    @(210.0000 mm, 186.8000 mm): Pad 1 [RF_IN] of JB on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(210.0000 mm, 186.8000 mm): Pad 1 [RF_IN] of JB on F.Cu
+    @(210.0000 mm, 256.8000 mm): Pad 1 [RF_IN] of JC on F.Cu
+
+** Found 0 Footprint errors **
+
+** Ignored checks **
+    - Footprint has no courtyard defined
+    - Track endpoint not centered on via
+    - Tuning profile track geometries
+    - Footprint doesn't match symbol's footprint filters
+    - Footprint component type doesn't match footprint pads
+
+** End of Report **

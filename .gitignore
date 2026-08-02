@@ -1,0 +1,36 @@
+# --- KiCad user/session state (not design data) ---
+*.kicad_prl
+*.lck
+~*.lck
+fp-info-cache
+*-backups/
+*.kicad_pcb-bak
+*.kicad_sch-bak
+_autosave-*
+
+# --- Editor local-history plugin (contains its own nested git repo) ---
+.history/
+
+# --- Deliberate design snapshots ---
+# Kept on disk as a local safety net; git history is the revision system for the repo.
+rev8_backups/
+rev9_backups/
+
+# --- Third-party datasheets (redistribution not ours to grant; see BOM/Links.txt) ---
+BOM/*.pdf
+
+# --- Unreleased revisions & studies (local only; repo = manufactured Rev 7.13.1) ---
+patch_antenna_smp_rev8.*
+patch_antenna_smp_rev9.*
+rev9_fab/
+rev9_gerbers_jlcpcb.zip
+REV8_PLAN.md
+REV9_CONNECTORS.md
+DESIGN_915_MESHTASTIC.md
+VNA_TEST_PLAN.md
+measurements/
+
+# --- Transient DRC / build output ---
+drc_*.rpt
+drc_*.log
+*.tmp
