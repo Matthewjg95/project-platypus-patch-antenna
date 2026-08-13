@@ -5,14 +5,13 @@ no antenna generator, no reference design, no copied footprint. Every dimension 
 derived from the cavity model and Hammerstad–Jensen microstrip synthesis, then
 validated on manufactured hardware over a real RF link.
 
-**Measured result: +12.5 dB over the host device's internal chip antenna.**
+**Status: manufactured and functional. Gain vs the host's internal antenna is not
+yet characterised.**
 
-| | Internal chip antenna | External patch (Design C) | Delta |
-|---|---|---|---|
-| RSSI | −40.5 dBm (avg) | −28.0 dBm (best) | **+12.5 dB** (≈18× sensitivity) |
-
-Measured on an M5Tab5 (ESP32-C6-MINI-1U) with its RF switch toggled to the external
-MMCX antenna port. Full method in [`TEST_PROCEDURE.md`](TEST_PROCEDURE.md).
+An early measurement produced an anomalously high delta and was excluded from
+conclusions pending repeatability. Characterisation is in progress under a
+controlled procedure — see [`TEST_PROCEDURE.md`](TEST_PROCEDURE.md) and
+[`VNA_TEST_PLAN.md`](VNA_TEST_PLAN.md).
 
 > Board photos: the panel is purple ENIG and photographs beautifully — see the Hackster
 > project this repo accompanies.
@@ -68,8 +67,9 @@ than the feed is a common mistake that creates spurious resonances and spoils th
 
 - **Return loss is not signal loss.** A mismatch costs only 10·log₁₀(1−|Γ|²): even
   Design B's deliberate 97 Ω feed point loses well under 2 dB of delivered power. The
-  A/B/C comparison therefore needs an S11 sweep (VNA), not RSSI — the +12.5 dB headline
-  comes from directivity and escaping the host enclosure, not matching finesse.
+  A/B/C comparison therefore needs an S11 sweep (VNA), not RSSI — whatever advantage a
+  patch shows over a chip antenna comes from directivity and escaping the host
+  enclosure, not from matching finesse.
 - **Front-to-back is modest by design.** The ground plane extends only 10–12 mm
   (≈0.1 λ) past the patch, so realistic F/B is ~6–10 dB. Fine for "point the gain at
   the far node"; don't expect a deep rear null indoors.
