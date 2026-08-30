@@ -13,6 +13,14 @@ conclusions pending repeatability. Characterisation is in progress under a
 controlled procedure — see [`TEST_PROCEDURE.md`](TEST_PROCEDURE.md) and
 [`VNA_TEST_PLAN.md`](VNA_TEST_PLAN.md).
 
+
+**Commercialization milestone:** On August 30, 2026, the Rev 2 development
+project was submitted to the Tindie × NextPCB Hardware Creator R&D Support
+Program. The application has been received and selection is pending. This does
+not change the validation status above; a sales listing remains gated on design
+review, DFM, repeatable RF testing, and pilot-readiness evidence. See
+[`MILESTONES.md`](MILESTONES.md).
+
 > Board photos: the panel is purple ENIG and photographs beautifully — see the Hackster
 > project this repo accompanies.
 
