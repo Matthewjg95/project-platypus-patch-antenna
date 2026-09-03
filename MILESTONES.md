@@ -1,8 +1,68 @@
 # Milestones
 
+## 2026-09-04 — Tindie × NextPCB R&D Support application approved
+
+Application status: **Approved**
+
+The project has been accepted into the Tindie × NextPCB Hardware Creator R&D
+Support Program.
+
+### Support awarded
+
+Three monthly support rounds are scheduled for September 5, October 5, and
+November 5, 2026. Each round provides:
+
+- **$30 PCB prototyping voucher** for a qualifying standalone PCB manufacturing
+  order.
+- **$20 international shipping discount code**.
+- Each voucher/code is valid for three months from issuance.
+
+Program rules state that the PCB voucher applies to standalone PCB fabrication
+orders with no substrate-material or fabrication-spec restriction and no
+minimum spend. It does **not** cover PCB cost embedded inside a PCBA order;
+assembly and component procurement therefore remain separate project costs.
+
+### Planned allocation
+
+The support is treated as an engineering-iteration budget rather than an
+obligation to spin the antenna three times:
+
+1. **September — Rev 2 validation run.** Freeze the audited KiCad package,
+   connector implementation, mounting geometry, labeling, and DFM details;
+   manufacture the A/B/C comparison panel.
+2. **October — evidence-gated Rev 2.1.** Order another antenna revision only if
+   controlled RF measurements identify a specific change worth testing.
+   Otherwise redirect the fabrication round to a Platypus One carrier/interface
+   board.
+3. **November — product candidate or Platypus One carrier.** If antenna
+   validation closes early, use the final fabrication round to accelerate
+   Platypus One hardware development rather than revising a solved antenna.
+
+**Revision rule:** a new antenna spin must be justified by measurement. Coupon
+availability alone is not a design-change requirement.
+
+This creates a funded path from Rev 2 through measured validation while
+preserving later program capacity for the broader Platypus hardware stack if
+the antenna converges early.
+
+### Next gate
+
+Before the September fabrication order:
+
+- complete KiCad source audit;
+- run DRC and HQDFM/DFM review;
+- verify panel geometry and connector fit;
+- confirm Rev 2 fabrication outputs;
+- define the exact before/after RF test matrix.
+
+The sales listing remains gated on repeatable RF results, BOM/assembly
+instructions, photographs, honest specifications, and pilot-readiness evidence.
+
+---
+
 ## 2026-08-30 — Tindie × NextPCB R&D Support application submitted
 
-Application status: **Received; selection pending**
+Application status: **Superseded by approval on 2026-09-04**
 
 Project submitted as:
 
@@ -12,7 +72,7 @@ Project submitted as:
 - **Expected 12-month PCB quantity:** 50–200
 - **Related product listing:** Not yet published
 
-This is the project's first formal step from a documented open-source RF
+This was the project's first formal step from a documented open-source RF
 prototype toward a small-batch hobbyist product.
 
 ### Application development plan
@@ -31,9 +91,8 @@ prototype toward a small-batch hobbyist product.
 
 ### Product-release gate
 
-The application does **not** mean Rev 2 is production-ready or that program
-support has been awarded. A public sales listing waits until all of the
-following are complete:
+Approval does **not** mean Rev 2 is production-ready. A public sales listing
+waits until all of the following are complete:
 
 - KiCad source and fabrication-output review.
 - DRC/DFM acceptance.
@@ -42,13 +101,6 @@ following are complete:
 - Practical connectivity testing.
 - BOM, assembly instructions, photographs, and honest specifications.
 - Pilot pricing and fulfillment plan.
-
-### Program opportunity
-
-If approved, the Tindie × NextPCB Hardware Creator R&D Support Program may
-provide PCB prototyping and international-shipping support over three months.
-Any support received will be recorded here when confirmed. Application receipt
-alone does not imply endorsement by Tindie or NextPCB.
 
 Program page:
 https://www.tindie.com/campaigns/nextpcb-2026/
