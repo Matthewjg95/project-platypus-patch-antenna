@@ -13,13 +13,14 @@ conclusions pending repeatability. Characterisation is in progress under a
 controlled procedure — see [`TEST_PROCEDURE.md`](TEST_PROCEDURE.md) and
 [`VNA_TEST_PLAN.md`](VNA_TEST_PLAN.md).
 
-
-**Commercialization milestone:** On August 30, 2026, the Rev 2 development
-project was submitted to the Tindie × NextPCB Hardware Creator R&D Support
-Program. The application has been received and selection is pending. This does
-not change the validation status above; a sales listing remains gated on design
-review, DFM, repeatable RF testing, and pilot-readiness evidence. See
-[`MILESTONES.md`](MILESTONES.md).
+**Commercialization milestone:** On September 4, 2026, the Rev 2 development
+project was **approved** for the Tindie × NextPCB Hardware Creator R&D Support
+Program after applying on August 30. The award provides three monthly rounds of
+standalone PCB-prototyping and international-shipping support. Rev 2 remains an
+engineering-validation build: a sales listing is still gated on design review,
+DFM, repeatable RF testing, and pilot-readiness evidence. Later support rounds
+may be redirected to Platypus One carrier-board fabrication if the antenna
+converges without another justified spin. See [`MILESTONES.md`](MILESTONES.md).
 
 > Board photos: the panel is purple ENIG and photographs beautifully — see the Hackster
 > project this repo accompanies.
