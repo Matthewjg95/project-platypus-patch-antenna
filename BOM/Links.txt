@@ -1,1 +1,13 @@
+# Vendor datasheets (PDFs deliberately not committed — see PROJECT_STATUS.md)
+
+## Rev 9 connectors
+# Wurth WR-MMCX vertical SMT jack 66012102111404 (JMA-JMI) — land pattern on page 1
+https://www.we-online.com/components/products/datasheet/66012102111404.pdf
+# Hirose U.FL-R-SMT-1 (JUA-JUI) — U.FL series catalog with recommended PCB pattern + metal mask
+https://www.hirose.com/en/product/document?clcode=&productname=&series=U.FL&documenttype=Catalog&lang=en&documentid=ed_U.FL_CAT
+# Hirose U.FL-R-SMT-1 datasheet mirror (LCSC-hosted PDF)
+https://datasheet.lcsc.com/lcsc/2006112255_HRS-Hirose-U-FL-R-SMT-1-01_C598199.pdf
+
+## Rev 7.13.1 (manufactured, edge-launch)
+# Cinch/Johnson MMCX edge-launch 135-3711-801
 https://www.digikey.com/en/products/detail/cinch-connectivity-solutions-johnson/135-3711-801/263441
