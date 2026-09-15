@@ -1,0 +1,25 @@
+(version 1)
+
+# Project Platypus patch_antenna_smp Rev 8 — Custom DRC Rules
+# Place this file alongside patch_antenna_smp_rev8.kicad_pcb
+
+# MMCX 135-3711-801 GND pads sit flush with the board edge / notch wall by design.
+# The connector body spans the edge. Suppress edge clearance for every MMCX GND pad.
+# The only F.Cu pads on the GND net are MMCX grounds (M3 holes are NPTH, no net),
+# so this single rule covers all connectors across the 3x3 panel (JA..JI).
+(rule "MMCX_GND_edge_ok"
+  (constraint edge_clearance (min 0mm))
+  (condition "A.Type == 'Pad' && A.Net == 'GND' && A.Layer == 'F.Cu'")
+)
+
+# RF_IN signal pad (pad 1) of each connector sits 3.3mm inside the routed board
+# notch. Contact is made by the connector spring pin, not PCB copper. The
+# resulting unconnected_items warnings are intentional — add DRC exclusions in
+# KiCad by right-clicking each violation -> Add DRC Exclusion.
+
+# V-cut lines live on Edge.Cuts (GM1) so JLCPCB scores them. KiCad reports the
+# internal V-cut segments as board-outline warnings; these are expected and are
+# excluded. The GND plane uses "keep all islands" so every board retains its own
+# ground (inset 0.5mm from the score lines) after singulation.
+
+# Always press B (Fill All Zones) before running DRC / exporting gerbers.

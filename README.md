@@ -100,15 +100,25 @@ than the feed is a common mistake that creates spurious resonances and spoils th
 
 ## Repository layout
 
+This repo now carries the **full project**, not just the manufactured revision — see
+[`PROJECT_STATUS.md`](PROJECT_STATUS.md) for the live status, revision map, and
+open decisions.
+
 ```
-patch_antenna_smp.kicad_pcb    KiCad board — the manufactured, field-tested revision
-patch_antenna_smp.kicad_pro    KiCad project
-patch_antenna_smp.kicad_dru    Custom DRC rules (MMCX edge-clearance waivers)
-DESIGN_NOTES_v72.md            Full design derivation, BOM, fab notes
-TEST_PROCEDURE.md              5-phase RF test protocol
-DRC7.13.1.rpt                  DRC report of the released revision
-gerbers/  +  gerbers.zip       Fab package as manufactured (JLCPCB)
-BOM/Links.txt                  Component sourcing
+patch_antenna_smp.kicad_pcb      Rev 7.13.1 — the MANUFACTURED revision (do not edit)
+gerbers/  +  gerbers.zip         Rev 7.13.1 fab package as manufactured (JLCPCB)
+DRC7.13.1.rpt                    DRC report of the manufactured revision
+patch_antenna_smp_rev8.*         Rev 8 — 3×3 panel respin (lessons-learned; superseded)
+patch_antenna_smp_rev9.*         Rev 9 — dual SMT connector lands (u.FL + MMCX); current
+rev9_fab/ + rev9_gerbers_jlcpcb.zip   Rev 9 JLCPCB fab+assembly package (BOM/CPL included)
+rev8_backups/, rev9_backups/     Staged design snapshots (rollback points)
+REV8_PLAN.md, REV9_CONNECTORS.md Revision change logs & design decisions
+DESIGN_915_MESHTASTIC.md         915 MHz Meshtastic/LoRa patch — design study
+DESIGN_NOTES_v72.md              Full first-principles derivation, BOM, fab notes
+TEST_PROCEDURE.md                Over-the-air RF test protocol
+VNA_TEST_PLAN.md                 Bench characterisation milestones (S11, gain, pattern)
+PROJECT_STATUS.md                Current state, toolchain notes, transfer guide
+BOM/Links.txt                    Component sourcing
 ```
 
 ## Bill of materials (per board)
